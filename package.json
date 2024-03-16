@@ -4,6 +4,7 @@
   "description": "",
   "scripts": {
     "build": "yarn run barrels && tsc --project tsconfig.compile.json",
+    "build:prod": "yarn run barrels && tsc --project tsconfig.compile.prod.json",
     "build:specs": "yarn run build && yarn tsed run generate-swagger --output ./specs",
     "barrels": "barrelsby --config .barrelsby.json",
     "start": "yarn run barrels && tsnd --inspect --exit-child --cls --ignore-watch node_modules --respawn --transpile-only src/index.ts",
