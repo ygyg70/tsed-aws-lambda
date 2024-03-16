@@ -4,7 +4,6 @@
   "description": "",
   "scripts": {
     "build": "yarn run barrels && tsc --project tsconfig.compile.json",
-    "build:prod": "yarn run barrels && tsc --project tsconfig.compile.prod.json",
     "build:specs": "yarn run build && yarn tsed run generate-swagger --output ./specs",
     "barrels": "barrelsby --config .barrelsby.json",
     "start": "yarn run barrels && tsnd --inspect --exit-child --cls --ignore-watch node_modules --respawn --transpile-only src/index.ts",
@@ -16,7 +15,7 @@
     "test:lint:fix": "eslint '**/*.{ts,js}' --fix",
     "prettier": "prettier '**/*.{ts,js,json,md,yml,yaml}' --write",
     "prepare": "is-ci || husky install",
-    "invoke:any": "yarn run build && yarn serverless invoke local -f any --data '{\"path\":\"/rest/hello-world\", \"httpMethod\": \"GET\"}'"
+    "invoke:any": "yarn run build:prod && yarn serverless invoke local -f any --data '{\"path\":\"/rest/hello-world\", \"httpMethod\": \"GET\"}'"
   },
   "dependencies": {
     "@tsed/ajv": "^7.63.2",
