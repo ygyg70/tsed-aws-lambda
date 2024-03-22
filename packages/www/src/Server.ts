@@ -1,12 +1,13 @@
 import "@tsed/platform-express"; // /!\ keep this import
 import "@tsed/ajv";
 import "@tsed/swagger";
+
+import * as controllers from "@project/controllers";
 import { Configuration } from "@tsed/di";
 import { join } from "path";
 
 import { config } from "./config";
 import * as pages from "./controllers/pages/index";
-import * as controllers from "@project/controllers";
 
 @Configuration({
   ...config,
@@ -43,5 +44,4 @@ import * as controllers from "@project/controllers";
   },
   exclude: ["**/*.spec.ts"]
 })
-export class Server {
-}
+export class Server {}

@@ -7,7 +7,13 @@
       "path": "./packages/controllers/tsconfig.json"
     },
     {
+      "path": "./packages/lambda/tsconfig.json"
+    },
+    {
       "path": "./packages/www/tsconfig.json"
+    },
+    {
+      "path": "./tsconfig.spec.json"
     }
   ]
 }

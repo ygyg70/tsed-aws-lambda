@@ -1,0 +1,29 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "rootDir": "./src",
+    "outDir": "./dist",
+    "composite": true,
+    "noEmit": false,
+    "declaration": true,
+    "module": "nodeNext",
+    "moduleResolution": "nodeNext",
+    "types": [
+      "node",
+      "vitest",
+      "vitest/globals",
+      "vitest/importMeta"
+    ],
+    "paths": {
+      "@project/controllers/*": [
+        "./src/controllers/*"
+      ]
+    }
+  },
+  "include": [
+    "src/**/*.ts"
+  ],
+  "exclude": [
+    "src/**/*.spec.ts"
+  ]
+}

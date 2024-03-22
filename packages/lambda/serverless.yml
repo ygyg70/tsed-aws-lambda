@@ -11,12 +11,9 @@ plugins:
   - serverless-offline
 
 functions:
-  any:
-    handler: dist/handler.handler
+  timeslots:
+    handler: dist/timeslots/handler.getTimeslots
     events:
       - http:
-          method: ANY
-          path: /
-      - http:
-          method: ANY
-          path: "{proxy+}"
+          path: /timeslots
+          method: get
