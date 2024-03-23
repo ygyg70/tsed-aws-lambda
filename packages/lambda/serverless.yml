@@ -8,11 +8,25 @@ provider:
   lambdaHashingVersion: "20201221"
 
 plugins:
+  - serverless-esbuild
   - serverless-offline
+
+package:
+  individually: true
+
+custom:
+  esbuild:
+    packager: yarn
+    bundle: true
+    minify: true
+    sourcemap: false
+    keepNames: true
+  offline:
+    useChildProcesses: true
 
 functions:
   timeslots:
-    handler: dist/timeslots/handler.getTimeslots
+    handler: src/timeslots/handler.getTimeslots
     events:
       - http:
           path: /timeslots

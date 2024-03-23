@@ -7,9 +7,17 @@ export class TimeslotsController {
   async getTimeslots() {
     return [
       {
-        id: 1,
+        id: 8,
         name: "Timeslot 1"
       }
     ];
+  }
+
+  @Get("/:id")
+  async getTimeslotById() {
+    return {
+      id: 1,
+      name: "Timeslot 1"
+    };
   }
 }

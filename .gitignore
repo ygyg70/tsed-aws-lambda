@@ -52,6 +52,7 @@ test/**/*.js.map
 /public
 **/dist
 **/specs
+**/.esbuild
 #env
 .env.local
 .env.development

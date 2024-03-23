@@ -3,9 +3,12 @@
   "compilerOptions": {
     "rootDir": "./src",
     "outDir": "./dist",
-    "composite": true,
-    "noEmit": false,
-    "declaration": true,
+//    "composite": true,
+//    "noEmit": false,
+//    "declaration": true,
+    "target": "ESNext",
+    "module": "nodeNext",
+    "moduleResolution": "nodeNext",
     "types": [
       "node",
       "vitest",

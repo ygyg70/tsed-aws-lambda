@@ -3,9 +3,7 @@
   "compilerOptions": {
     "rootDir": "./src",
     "outDir": "./dist",
-    "composite": true,
-    "noEmit": false,
-    "declaration": true,
+    "target": "ESNext",
     "module": "nodeNext",
     "moduleResolution": "nodeNext",
     "types": [
@@ -13,17 +11,14 @@
       "vitest",
       "vitest/globals",
       "vitest/importMeta"
-    ],
-    "paths": {
-      "@project/controllers/*": [
-        "./src/controllers/*"
-      ]
-    }
+    ]
   },
   "include": [
     "src/**/*.ts"
   ],
   "exclude": [
-    "src/**/*.spec.ts"
+    "dist",
+    "src/**/*.spec.ts",
+    ".esbuild"
   ]
 }
