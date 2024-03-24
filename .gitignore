@@ -50,9 +50,16 @@ test/**/*.js.map
 
 # Project
 /public
-/dist
-
+**/dist
+**/specs
+**/.esbuild
 #env
 .env.local
 .env.development
 !/.hypothesis/
+
+# yarn
+.yarn/*
+!.yarn/releases
+
+**/*.tsbuildinfo

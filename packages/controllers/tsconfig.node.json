@@ -1,0 +1,25 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "rootDir": "./src",
+    "outDir": "./dist",
+//    "composite": true,
+//    "noEmit": false,
+//    "declaration": true,
+    "target": "ESNext",
+    "module": "nodeNext",
+    "moduleResolution": "nodeNext",
+    "types": [
+      "node",
+      "vitest",
+      "vitest/globals",
+      "vitest/importMeta"
+    ]
+  },
+  "include": [
+    "src/**/*.ts"
+  ],
+  "exclude": [
+    "src/**/*.spec.ts"
+  ]
+}
