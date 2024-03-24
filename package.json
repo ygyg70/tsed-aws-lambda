@@ -3,8 +3,10 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "build": "tsc --build tsconfig.json",
-    "start": "yarn workspace @project/www run start",
+    "build:barrels": "yarn workspace @project/controllers run barrels",
+    "build:swagger": "yarn build:barrels && yarn workspace @project/www run build:swagger",
+    "start:www": "yarn workspace @project/www run start",
+    "start:lambda": "yarn workspace @project/lambda run start",
     "test": "vitest run",
     "test:watch": "vitest run",
     "test:lint": "eslint '**/*.{ts,js}'",
