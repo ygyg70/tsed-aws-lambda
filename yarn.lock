@@ -1708,6 +1708,53 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"@project/www@workspace:packages/www":
+  version: 0.0.0-use.local
+  resolution: "@project/www@workspace:packages/www"
+  dependencies:
+    "@project/controllers": "workspace:*"
+    "@tsed/ajv": "npm:^7.67.0"
+    "@tsed/cli": "npm:^5.1.1"
+    "@tsed/cli-core": "npm:^5.1.1"
+    "@tsed/cli-generate-swagger": "npm:^5.1.1"
+    "@tsed/cli-plugin-eslint": "npm:5.1.1"
+    "@tsed/cli-plugin-vitest": "npm:5.1.1"
+    "@tsed/common": "npm:^7.67.0"
+    "@tsed/core": "npm:^7.67.0"
+    "@tsed/di": "npm:^7.67.0"
+    "@tsed/engines": "npm:^7.67.0"
+    "@tsed/exceptions": "npm:^7.67.0"
+    "@tsed/json-mapper": "npm:^7.67.0"
+    "@tsed/logger": "npm:^6.7.5"
+    "@tsed/openspec": "npm:^7.67.0"
+    "@tsed/platform-exceptions": "npm:^7.67.0"
+    "@tsed/platform-express": "npm:^7.67.0"
+    "@tsed/platform-params": "npm:^7.67.0"
+    "@tsed/platform-response-filter": "npm:^7.67.0"
+    "@tsed/platform-views": "npm:^7.67.0"
+    "@tsed/schema": "npm:^7.67.0"
+    "@tsed/swagger": "npm:^7.67.0"
+    "@types/compression": "npm:^1.7.5"
+    "@types/cookie-parser": "npm:^1.4.7"
+    "@types/cors": "npm:^2.8.17"
+    "@types/express": "npm:^4.17.21"
+    "@types/method-override": "npm:^0.0.35"
+    "@types/multer": "npm:^1.4.11"
+    ajv: "npm:^8.12.0"
+    body-parser: "npm:^1.20.2"
+    compression: "npm:^1.7.4"
+    cookie-parser: "npm:^1.4.6"
+    cors: "npm:^2.8.5"
+    express: "npm:^4.19.1"
+    method-override: "npm:^3.0.0"
+    supertest: "npm:^6.3.4"
+    ts-node: "npm:^10.9.2"
+    ts-node-dev: "npm:^2.0.0"
+    tsconfig-paths: "npm:4.2.0"
+    typescript: "npm:5.4.3"
+  languageName: unknown
+  linkType: soft
+
 "@rollup/pluginutils@npm:^5.1.0":
   version: 5.1.0
   resolution: "@rollup/pluginutils@npm:5.1.0"
@@ -3282,53 +3329,6 @@ __metadata:
   checksum: 10c0/f6d4847badbb7812f27cb4f32bd08a15cc866e4f105c36a29f8aa6d58f8b06b845bb907ef4d4edb682f1d1cac173e3095ae715ae345f55e5af718413793a4ead
   languageName: node
   linkType: hard
-
-"@tsed/www@workspace:packages/www":
-  version: 0.0.0-use.local
-  resolution: "@tsed/www@workspace:packages/www"
-  dependencies:
-    "@project/controllers": "workspace:*"
-    "@tsed/ajv": "npm:^7.67.0"
-    "@tsed/cli": "npm:^5.1.1"
-    "@tsed/cli-core": "npm:^5.1.1"
-    "@tsed/cli-generate-swagger": "npm:^5.1.1"
-    "@tsed/cli-plugin-eslint": "npm:5.1.1"
-    "@tsed/cli-plugin-vitest": "npm:5.1.1"
-    "@tsed/common": "npm:^7.67.0"
-    "@tsed/core": "npm:^7.67.0"
-    "@tsed/di": "npm:^7.67.0"
-    "@tsed/engines": "npm:^7.67.0"
-    "@tsed/exceptions": "npm:^7.67.0"
-    "@tsed/json-mapper": "npm:^7.67.0"
-    "@tsed/logger": "npm:^6.7.5"
-    "@tsed/openspec": "npm:^7.67.0"
-    "@tsed/platform-exceptions": "npm:^7.67.0"
-    "@tsed/platform-express": "npm:^7.67.0"
-    "@tsed/platform-params": "npm:^7.67.0"
-    "@tsed/platform-response-filter": "npm:^7.67.0"
-    "@tsed/platform-views": "npm:^7.67.0"
-    "@tsed/schema": "npm:^7.67.0"
-    "@tsed/swagger": "npm:^7.67.0"
-    "@types/compression": "npm:^1.7.5"
-    "@types/cookie-parser": "npm:^1.4.7"
-    "@types/cors": "npm:^2.8.17"
-    "@types/express": "npm:^4.17.21"
-    "@types/method-override": "npm:^0.0.35"
-    "@types/multer": "npm:^1.4.11"
-    ajv: "npm:^8.12.0"
-    body-parser: "npm:^1.20.2"
-    compression: "npm:^1.7.4"
-    cookie-parser: "npm:^1.4.6"
-    cors: "npm:^2.8.5"
-    express: "npm:^4.19.1"
-    method-override: "npm:^3.0.0"
-    supertest: "npm:^6.3.4"
-    ts-node: "npm:^10.9.2"
-    ts-node-dev: "npm:^2.0.0"
-    tsconfig-paths: "npm:4.2.0"
-    typescript: "npm:5.4.3"
-  languageName: unknown
-  linkType: soft
 
 "@types/aws-lambda@npm:^8.10.136":
   version: 8.10.136

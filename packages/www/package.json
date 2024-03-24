@@ -1,12 +1,12 @@
 {
-  "name": "@tsed/www",
+  "name": "@project/www",
   "version": "1.0.0",
   "description": "Server to develop API locally and develop documentation",
   "scripts": {
     "test": "vitest run",
     "test:watch": "vitest",
     "build": "tsc --build tsconfig.json",
-    "build:specs": "yarn tsed run generate-swagger --output ./specs",
+    "build:swagger": "yarn tsed run generate-swagger --output ./specs",
     "start": "tsnd --inspect --exit-child --cls --ignore-watch node_modules --respawn --transpile-only src/index.ts"
   },
   "dependencies": {
