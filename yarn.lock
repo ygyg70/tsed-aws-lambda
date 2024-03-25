@@ -1668,6 +1668,7 @@ __metadata:
     dotenv-expand: "npm:^11.0.6"
     dotenv-flow: "npm:^4.1.0"
     esbuild: "npm:0.20.2"
+    esbuild-plugin-tsc: "npm:0.4.0"
     find-my-way: "npm:8.1.0"
     serverless: "npm:^3.38.0"
     serverless-esbuild: "npm:1.52.1"
@@ -6090,6 +6091,17 @@ __metadata:
     es6-iterator: "npm:^2.0.3"
     es6-symbol: "npm:^3.1.1"
   checksum: 10c0/460932be9542473dbbddd183e21c15a66cfec1b2c17dae2b514e190d6fb2896b7eb683783d4b36da036609d2e1c93d2815f21b374dfccaf02a8978694c2f7b67
+  languageName: node
+  linkType: hard
+
+"esbuild-plugin-tsc@npm:0.4.0":
+  version: 0.4.0
+  resolution: "esbuild-plugin-tsc@npm:0.4.0"
+  dependencies:
+    strip-comments: "npm:^2.0.1"
+  peerDependencies:
+    typescript: ^4.0.0 || ^5.0.0
+  checksum: 10c0/80d80327b87c27c6054bea2d1236c1295420f05d392d6e7c3069e57f4359666bd005b70fb6cb44c2e5d0c3c4875c5c0358908f6a83e587a6025966977356bfff
   languageName: node
   linkType: hard
 
@@ -11581,6 +11593,13 @@ __metadata:
   version: 3.0.0
   resolution: "strip-bom@npm:3.0.0"
   checksum: 10c0/51201f50e021ef16672593d7434ca239441b7b760e905d9f33df6e4f3954ff54ec0e0a06f100d028af0982d6f25c35cd5cda2ce34eaebccd0250b8befb90d8f1
+  languageName: node
+  linkType: hard
+
+"strip-comments@npm:^2.0.1":
+  version: 2.0.1
+  resolution: "strip-comments@npm:2.0.1"
+  checksum: 10c0/984321b1ec47a531bdcfddd87f217590934e2d2f142198a080ec88588280239a5b58a81ca780730679b6195e52afef83673c6d6466c07c2277f71f44d7d9553d
   languageName: node
   linkType: hard
 
