@@ -16,11 +16,16 @@ package:
 
 custom:
   esbuild:
+    platform: "node"
+    mainFields:
+      - main
     packager: yarn
     bundle: true
-    minify: true
+    minify: false
     sourcemap: false
     keepNames: true
+    plugins: ./esbuild.plugins.cjs
+
   offline:
     useChildProcesses: true
 
@@ -30,4 +35,10 @@ functions:
     events:
       - http:
           path: /timeslots
+          method: get
+  timeslotsById:
+    handler: src/timeslots/handler.getTimeslotById
+    events:
+      - http:
+          path: /timeslots/{id}
           method: get

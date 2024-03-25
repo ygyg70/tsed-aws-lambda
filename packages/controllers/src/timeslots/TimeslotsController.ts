@@ -1,5 +1,6 @@
 import { Controller } from "@tsed/di";
-import { Get } from "@tsed/schema";
+import { PathParams } from "@tsed/platform-params";
+import { Get, Max } from "@tsed/schema";
 
 @Controller("/timeslots")
 export class TimeslotsController {
@@ -14,10 +15,10 @@ export class TimeslotsController {
   }
 
   @Get("/:id")
-  async getTimeslotById() {
+  async getTimeslotById(@PathParams("id") @Max(50) id: number) {
     return {
-      id: 1,
-      name: "Timeslot 1"
+      id: id,
+      name: `Timeslot ${id}`
     };
   }
 }

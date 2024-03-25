@@ -3,11 +3,8 @@
   "compilerOptions": {
     "rootDir": "./src",
     "outDir": "./dist",
-//    "composite": true,
-//    "noEmit": false,
-//    "declaration": true,
     "target": "ESNext",
-    "module": "nodeNext",
+    "module": "ESNext",
     "moduleResolution": "nodeNext",
     "types": [
       "node",
