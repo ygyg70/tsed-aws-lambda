@@ -6,9 +6,9 @@
   },
   "parser": "@typescript-eslint/parser",
   "extends": [
-    "plugin:prettier/recommended",
     "plugin:@typescript-eslint/recommended",
-    "plugin:vitest/recommended"
+    "plugin:vitest/recommended",
+    "plugin:prettier/recommended"
   ],
   "plugins": ["workspaces", "simple-import-sort"],
   "rules": {
