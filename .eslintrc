@@ -8,9 +8,10 @@
   "extends": [
     "plugin:prettier/recommended",
     "plugin:@typescript-eslint/recommended",
-    "plugin:vitest/recommended"
+    "plugin:vitest/recommended",
+    "plugin:@tsed/recommended"
   ],
-  "plugins": ["workspaces", "simple-import-sort"],
+  "plugins": ["workspaces", "simple-import-sort", "@tsed"],
   "rules": {
     "@typescript-eslint/no-inferrable-types": 0,
     "@typescript-eslint/no-unused-vars": 2,

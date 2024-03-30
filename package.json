@@ -22,6 +22,7 @@
   },
   "devDependencies": {
     "@swc/core": "1.4.8",
+    "@tsed/eslint-plugin": "1.1.10",
     "@types/node": "^20.11.30",
     "@types/supertest": "^6.0.2",
     "@typescript-eslint/eslint-plugin": "^7.3.1",
