@@ -3,20 +3,22 @@
   "compilerOptions": {
     "baseUrl": ".",
     "outDir": "dist",
+    "target": "ESNext",
+    "module": "ESNext",
     "moduleResolution": "nodeNext",
-    "module": "nodeNext",
     "noEmit": true,
     "declaration": false,
     "types": [
       "vitest/globals",
       "vitest/importMeta",
-      "vite/client",
       "node",
+      "esbuild",
       "vitest"
     ]
   },
   "include": [
-    "vitest.config.mts",
+    "esbuild.config.js",
+    "vitest.config.ts",
     "src/**/*.spec.ts"
   ],
   "exclude": ["dist",".esbuild"]
