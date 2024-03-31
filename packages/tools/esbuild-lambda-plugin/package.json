@@ -1,0 +1,16 @@
+{
+  "name": "@project/esbuild-lambda-plugin",
+  "version": "1.0.0",
+  "description": "Custom ESBuild plugin to build and deploy AWS Lambda functions",
+  "keywords": [
+    "esbuild",
+    "lambda",
+    "aws"
+  ],
+  "main": "index.js",
+  "type": "module",
+  "devDependencies": {
+    "esbuild": "0.20.2",
+    "fs-extra": "11.2.0"
+  }
+}

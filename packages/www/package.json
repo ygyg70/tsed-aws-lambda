@@ -30,6 +30,9 @@
     "compression": "^1.7.4",
     "cookie-parser": "^1.4.6",
     "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "dotenv-expand": "^11.0.6",
+    "dotenv-flow": "^4.1.0",
     "express": "^4.19.1",
     "method-override": "^3.0.0"
   },
@@ -50,7 +53,6 @@
     "supertest": "^6.3.4",
     "ts-node": "^10.9.2",
     "ts-node-dev": "^2.0.0",
-    "tsconfig-paths": "4.2.0",
     "typescript": "5.4.3"
   }
 }

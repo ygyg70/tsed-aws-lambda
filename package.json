@@ -50,7 +50,8 @@
     "runtime": "node"
   },
   "workspaces": [
-    "packages/*"
+    "packages/*",
+    "packages/tools/*"
   ],
   "packageManager": "yarn@4.1.1"
 }

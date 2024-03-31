@@ -8,15 +8,18 @@
   "extends": [
     "plugin:prettier/recommended",
     "plugin:@typescript-eslint/recommended",
-    "plugin:vitest/recommended",
-    "plugin:@tsed/recommended"
+    "plugin:vitest/recommended"
   ],
-  "plugins": ["workspaces", "simple-import-sort", "@tsed"],
+  "plugins": [
+    "workspaces",
+    "simple-import-sort",
+    "@tsed"
+  ],
   "rules": {
     "@typescript-eslint/no-inferrable-types": 0,
     "@typescript-eslint/no-unused-vars": 2,
     "@typescript-eslint/no-var-requires": 0,
-     "simple-import-sort/imports": "error",
+    "simple-import-sort/imports": "error",
     "simple-import-sort/exports": "error",
     "workspaces/no-absolute-imports": "error",
     "prettier/prettier": "error"
