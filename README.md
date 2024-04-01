@@ -22,11 +22,19 @@
 ## Features
 
 - Yarn 4 workspaces
-- 
+- AWS Lambda
+- Terraform
+- Ts.ED - Serverless and Fullstack framework
 
 ## Getting started
 
-> **Important!** Ts.ED requires Node >= 20 and TypeScript >= 5.
+This project requires some tools to be installed on your machine. Here is a list of the tools you need to install:
+
+- [AWS CLI](https://docs.aws.amazon.com/fr_fr/cli/latest/userguide/getting-started-install.html)
+- [Localstack CLI](https://docs.localstack.cloud/getting-started/installation/#localstack-cli)
+- [Terraform CLI](https://developer.hashicorp.com/terraform/tutorials/aws-get-started/install-cli)
+
+## Installation
 
 ```batch
 # install dependencies
@@ -35,16 +43,25 @@ $ yarn install
 
 ## Development
 
+### Lambda
+
+This command start the lambda function locally.
+
 ```batch
-# start lambda in offline mode
 $ yarn start:lambda
 ```
+
+> - It builds all lambda and create Zip file in the `dist` folder.
+> - It also generates a basic terraform file to deploy the lambda function.
+> - It deploys the lambda function on localstack (on start and on file change)
+
+### Full Express.js server
 
 Start full Express.js server:
 
 ```batch
 # start web server
-$ yarn start:dev
+$ yarn start:www
 ```
 
 ### Generate Swagger API documentation
@@ -63,7 +80,11 @@ $ yarn test
 
 ### Deployment
 
-TBD. Ask me for more information about deployment or look on the `sls` command provide by Serverless framework.
+Use terraform to deploy the lambda function on AWS.
+
+```batch
+TBD
+```
 
 ## Contributors
 
