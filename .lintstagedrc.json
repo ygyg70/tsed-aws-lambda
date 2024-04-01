@@ -1,4 +1,5 @@
-{ 
+{
   "**/*.{ts,js}": ["eslint --fix"],
-  "**/*.{ts,js,json,md,yml,yaml}": ["prettier --write"]
+  "**/*.{ts,js,json,md,yml,yaml}": ["prettier --write"],
+  "**/*.tf": ["terraform fmt"]
 }
